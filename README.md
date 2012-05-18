@@ -1,5 +1,5 @@
-momengine
-=========
+momentnode 0.0.0
+================
 
 receive a momentum's ecstream and forward it somewhere
 
@@ -23,3 +23,7 @@ node forward-tcp.js
 
 node watch-mail.js
 
+
+Todo:
+-----
+watch-mail.js: read file and send via SMTP
