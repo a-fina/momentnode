@@ -5,9 +5,6 @@ receive a momentum's ecstream and forward it somewhere
 
 What:
 -----
-ecstream.rb:
-  engine client 
-
 forward-tcp.js:
   forward engine request
 
