@@ -6,11 +6,11 @@ receive a momentum's ecstream and forward it somewhere
 What:
 -----
 forward-tcp.js:
-  forward engine request
+  forward ecstream request
 
 fake-momentum.js:
-  serve engine request.
-  broke ecstream into single emails in mail/ directory
+  serve ecstream request.
+  broke ecstream into single email files in mail/ directory
 
 watch-mail.js:
   watch for new file in mail/ directory
