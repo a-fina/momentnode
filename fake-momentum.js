@@ -25,7 +25,7 @@ var server = net.createServer(function(c) { //'connection' listener
     var momentumReplay = zeroFill(hour2,2) + '/'+ zeroFill(min2,2) +'-'+ zeroFill(key5,5)  +'-'+ zeroFill(key8,8);
     var replayLength = '20';
 
-    var fileName = 'mail/'+ momentumReplay.replace('/','-');;
+    var fileName = 'spool/'+ momentumReplay.replace('/','-');;
     fs.writeFile(fileName, data.toString(), function (err) {
       if (err) throw err;
     });

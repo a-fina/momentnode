@@ -22,12 +22,12 @@ function sendMail(filename){
   });
 };
 
-fs.watch('./mail', function (event, filename) {
+fs.watch('./spool', function (event, filename) {
   console.log('event is: ' + event);
   if (filename) {
     console.log('filename provided: ' + filename);
 
-    fs.readFile('./mail/'+filename, function (err, data) {
+    fs.readFile('./spool/'+filename, function (err, data) {
       if (err) throw err;
       if (event == 'change')
         sendMail(filename);
