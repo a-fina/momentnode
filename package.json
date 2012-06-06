@@ -1,13 +1,16 @@
 {
   "author": "bayois <bayois@gmail.com>",
-  "name": "momengine",
+  "name": "momentnode",
   "description": "receive a momentum's ecstream and forward it somewhere",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bayois/momengine.git"
+    "url": "git://github.com/bayois/momentnode.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "flatiron": "*",
+    "mail": "*"
+  },
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {

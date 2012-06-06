@@ -4,7 +4,7 @@
 
 var net = require('net');
 
-var SMTPaddress = "1.1.1.1",
+var SMTPaddress = "127.0.0.1",
     SMTPport  = 8124;
 
 
@@ -32,7 +32,7 @@ var server = net.createServer(function(c) { //'connection' listener
     console.log('fromEngine<<'+ data.toString()  +'>>');
   });
   console.log(c);
-  c.pipe(toSMTP);
+  c.pipe(toSTMP);
 });
 
 server.on('error', function (e) {
